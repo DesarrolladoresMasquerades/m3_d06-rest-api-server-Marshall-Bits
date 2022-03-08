@@ -7,7 +7,7 @@ const app = express();
 require("./config")(app);
 
 // 👇 Start handling routes here
-const allRoutes = require("./routes");
+const indexRoutes = require("./routes");
 app.use("/", indexRoutes);
 
 const projectRouter = require("./routes/project.routes");
